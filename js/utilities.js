@@ -1,9 +1,6 @@
 const NUMBER_OF_POSSIBLE_COLORS = 16581375;
 const HEXIDECIMAL = 16;
 
-/* Range: 0-255 */
-const MINIMAL_DIFFERENCE_IN_BRIGHTNESS = 25;
-
 function $(id) {
    	return document.getElementById(id);
 }
