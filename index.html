@@ -10,11 +10,11 @@
 		<script>
 			function init() {
 				$('strategy').innerHTML = getRandomStrategy();
+	
 				const colors = getRandomColors();
-				console.log(colors.toString());
-				console.log(colors.text.toString());
-				console.log(colors.background.toString());
+	
 				$('strategy').style = "color:#" + hexidecimal(colors.text);
+	
 				$('body').style = "background-color:#" + hexidecimal(colors.background);
 			}
 		</script>
