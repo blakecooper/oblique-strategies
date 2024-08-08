@@ -6,11 +6,16 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="js/strategies.js"></script>
 		<script src="js/utilities.js"></script>
+		<script src="js/contrast.js"></script>
 		<script>
 			function init() {
 				$('strategy').innerHTML = getRandomStrategy();
-				$('strategy').style = "color:#" + getRandomColor();
-				$('body').style = "background-color:#" + getRandomColor();
+				const colors = getRandomColors();
+				console.log(colors.toString());
+				console.log(colors.text.toString());
+				console.log(colors.background.toString());
+				$('strategy').style = "color:#" + hexidecimal(colors.text);
+				$('body').style = "background-color:#" + hexidecimal(colors.background);
 			}
 		</script>
 	</head>
